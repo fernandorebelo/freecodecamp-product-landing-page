@@ -8,26 +8,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="nav">
-      <img
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-        alt="logo original trombones"
-      />
-      <a href="#features">Features</a>
-      <a href="#video">How It Works</a>
-      <a href="#pricing">pricing</a>
-    </div>
-
-    <div id="header">
-      <h2>Handcrafted, home-made masterpieces</h2>
-      <input
-        type="email"
-        name=""
-        id="email-box"
-        placeholder="Enter your e-mail adress"
-      />
-      <input type="button" value="GET STARTED" />
-    </div>
+    <header id="nav">
+      <nav id="div-nav">
+        <a href="#">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="logo original trombones"
+          />
+        </a>
+        <div>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#video">How It Works</a></li>
+            <li><a href="#pricing">pricing</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="title">
+      <div id="div-title">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form action="" id="form">
+          <input
+            type="email"
+            name=""
+            id="email-box"
+            placeholder="Enter your e-mail adress"
+            required
+          />
+          <input type="submit" value="GET STARTED" id="btn" />
+        </form>
+      </div>
+    </section>
 
     <section id="features">
       <div>
@@ -55,8 +67,6 @@
 
     <section id="video">
       <iframe
-        width="560"
-        height="315"
         src="https://www.youtube.com/embed/y8Yv4pnO7qc"
         title="YouTube video player"
         frameborder="0"
@@ -67,33 +77,36 @@
 
     <section id="pricing">
       <div id="tenor">
-        <div class="title-price">TENOR TROMBONE</div>
+        <p class="title-price">TENOR TROMBONE</p>
         <h2>$600</h2>
         <ul>
           <li>Lorem</li>
           <li>Lorem</li>
           <li>Lorem</li>
         </ul>
+        <input type="submit" value="SELECT" id="btn" />
       </div>
 
       <div id="bass">
-        <div class="title-price">BASS TROMBONE</div>
+        <p class="title-price">BASS TROMBONE</p>
         <h2>$900</h2>
         <ul>
           <li>Lorem</li>
           <li>Lorem</li>
           <li>Lorem</li>
         </ul>
+        <input type="submit" value="SELECT" id="btn" />
       </div>
 
       <div id="valve">
-        <div class="title-price">VALVE TROMBONE</div>
+        <p class="title-price">VALVE TROMBONE</p>
         <h2>$1200</h2>
         <ul>
           <li>Lorem</li>
           <li>Lorem</li>
           <li>Lorem</li>
         </ul>
+        <input type="submit" value="SELECT" id="btn" />
       </div>
     </section>
 
